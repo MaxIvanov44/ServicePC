@@ -1,0 +1,26 @@
+﻿<Controls:MetroWindow x:Class="Computer_Service.MasterMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Computer_Service"
+        Title="MasterMain" Height="300" Width="750">
+    <Window.Background>
+
+        <SolidColorBrush Color="#647382" />
+    </Window.Background>
+    <Grid>
+        <Label Content="Ожидают принятия" HorizontalAlignment="Left" Margin="5,51,0,0" VerticalAlignment="Top" />
+        <Label x:Name="all" Content="Label" HorizontalAlignment="Left" Margin="127,51,0,0" VerticalAlignment="Top" />
+        <Label Content="Текущих заказов:" HorizontalAlignment="Left" Margin="5,82,0,0" VerticalAlignment="Top" />
+        <Label  x:Name="now"  Content="Label" HorizontalAlignment="Left" Margin="127,82,0,0" VerticalAlignment="Top" />
+
+        <Menu Height="29" VerticalAlignment="Top" Background="#FF454E59">
+            <MenuItem Header="Просмотр заказов" Background="#FF2D333A" Click="MenuItem_Click_5" ></MenuItem>
+            <MenuItem Header="Техника" Background="#FF2D333A" Click="MenuItem_Click" ></MenuItem>
+            <MenuItem Header="Выход из аккаунта" Background="#FF2D333A" Click="MenuItem_Click_4" ></MenuItem>
+            <MenuItem Header="Выход из программы" Background="#FF2D333A" Click="MenuItem_Click_8" ></MenuItem>
+        </Menu>
+        <Label Content="Готовых заказов:" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" />
+        <Label  x:Name="ready"  Content="Label" HorizontalAlignment="Left" Margin="127,113,0,0" VerticalAlignment="Top" />
+    </Grid>
+</Controls:MetroWindow>
